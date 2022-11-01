@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Digital Library</title>
+    <link href="CSS/styles.css" rel="stylesheet "type="text/css"></link>
+</head>
+
+<body>
+    <!-- cabecera -->
+    <header>
+        <section class="informacion_superior">
+            <div class="jag">
+                <p id="menu_hamburguesa">☰</p>     
+                <a href="index.html" class="a_jag"><img src="IMAGES/JAG.PNG" class="img_jag"></a> 
+                <h1>Biblioteca Institucional</h1>
+            </div>
+            <div class="usuarios">
+                <a href="HTML/registrarse.html">Registrate</a>
+                <a href="HTML/iniciar_sesion.html">Iniciar Sesión</a>
+            </div> 
+        </section>
+        <section class="menu_principal">
+            <ul id="menu_principal">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="HTML/renovar.html">Renovar</a></li>
+                <li><a href="HTML/Novedades.html">Novedades</a></li>
+                <li><a href="HTML/Nosotros.html">Nosotros</a></li>
+            </ul>
+        </section>
+    </header>
+
+    <!-- Parte central y básica de la página -->
+    <main>
+        <!-- buscar -->
+        <section class="div_buscar">
+            <div class="cuadro_buscar">
+
+
+                <!-- Division de la parte de busqueda -->
+                <form action="PHP/Buscar.php" class="form_buscar" method="post">
+                    <input type="text" placeholder="&nbsp;¿Qué estás buscando?" name="cajabuscar" class="cajabuscar">
+                    <input type="submit" value="Buscar" name="botonbuscar" class="botonbuscar">
+                </form>
+                <?php
+                echo 'Today’s date is <b>' . date('Y/m/d') . '</b> and it’s a <b>'.date('l').'</b> today!'; ?>
+                <p> Esribe el titulo de la obra, nombre del autor o género literario y dale a buscar 
+                    para encontrar un libro</p>
+            </div>
+        </section>
+    </main>
+    <!-- footer -->
+    <footer>
+        <img src="IMAGES/JAG.PNG">
+        <p>
+            I. E. Jose Acevedo y Gomez - Medellin<br>
+            Imaginary Strokes - Grado 11° 2022<br>
+            Docente: Jorge Luis Rojas<br>
+            Correo: imaginaryacount@gmail.com
+        </p>
+    </footer>
+
+
+    <!-- script -->
+    <script src="JS/function.js"></script>
+</body>
+</html>

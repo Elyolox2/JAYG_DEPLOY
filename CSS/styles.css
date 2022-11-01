@@ -1,0 +1,570 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-color:rgb(202, 212, 255);
+}
+header{
+    height: 100%;
+}
+
+.main_libro{
+    display: flex;
+    flex-direction: row;
+}
+.main_libro .descripcion{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    align-items: center;
+}
+.main_libro .descripcion h1{
+    padding: 0px 0px 30px 0px;
+}
+.main_libro .descripcion p{
+    line-height: 30px;
+    font-family: sans-serif;
+    font-size: 22px;
+}
+.main_libro .imagen_libro{
+    padding: 30px 50px;
+}
+.main_libro .descripcion div{
+    padding: 50px 0px;
+}
+.main_libro .descripcion div .botoncitos{
+    margin: 0px 10px;
+    padding: 15px 20px;
+    background-color: #2F63B1;
+    font-size: 28px;
+    border-radius: 50px;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+
+/*primera linea de elementos*/
+.informacion_superior{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    font-family:sans-serif;
+}
+.img_jag{
+    display: flex;
+    width: 60px;
+
+    margin: 15px;
+}
+.jag p{
+    color: white;
+    cursor: pointer;
+    font-size: 30px;
+    padding: 10px 20px;
+    display: none;
+}
+.jag p{
+    display: none;
+}
+
+.informacion_superior h1{
+    font-size: 30px;
+    color: white;
+}
+.informacion_superior .jag{
+    display: flex;
+    align-items: center;
+}
+.usuarios{
+    display: flex;
+    margin: 10px;
+}
+.informacion_superior > .usuarios > a{
+    background-color:rgb(143, 143, 143);
+    padding: 15px;
+    border-radius: 25px;
+    margin: 5px;
+    border: solid 2px black;
+    font-size: 16px;
+    color: black;
+}
+.informacion_superior > .usuarios > a:hover{
+    background-color: rgb(255, 255, 255);
+}
+
+
+/*menu de elementos*/
+.menu_principal{
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    background-color:rgba(0, 30, 111);
+}
+.menu_principal ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0px 5%;
+}
+.menu_principal li{
+    list-style: none;
+    padding: 30px;
+    width: 100%;
+    text-align: center;
+    transition: .2s ease all;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu_principal a{
+    color: white;
+    font-family: sans-serif;
+    font-size: 25px;
+    font-family: sans-serif;
+}   
+.menu_principal li:hover{
+    background-color:rgba(0, 41, 111, 2);
+}
+
+/*buscar*/
+body > main{
+    width: 100%;
+    background-color:rgb(202, 212, 255);
+    font-family: sans-serif;
+}
+.div_buscar{
+    width: 100%;
+    text-align: left;
+}
+.cuadro_buscar{
+    padding: 100px 150px 0px;
+}
+.cuadro_buscar p{
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+.div_buscar h2{
+    font-size: 50px;
+}
+.div_buscar form{    
+    display: flex;
+    align-items: center;
+    margin: 20px 0px
+}
+.div_buscar form .cajabuscar{
+    width: 70%;
+    height: 50px;
+    font-size: 25px;
+}
+.div_buscar form .botonbuscar{
+    padding: 12px 20px;
+    margin: 0px 10px;
+    border: none;
+    border: solid black 1px;
+    font-family:sans-serif;
+    font-size: 20px;
+    background-color:rgba(0, 30, 111);
+    cursor: pointer;
+    color:white;
+    border-radius: 25px;
+}
+.div_buscar form .botonbuscar:hover{
+    background-color:rgba(0, 41, 111, 2);
+}
+
+/*pie de pagina*/
+footer{
+    font-family:sans-serif;
+    font-size: 20px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    padding: 70px;
+    display: flex;
+    align-items: center;
+}
+footer img{
+    width: 220px;
+}
+footer p{
+    margin: 20px;
+    line-height: 30px;
+}
+
+/*
+@Media
+*/
+
+/*Responsive*/
+@media (max-width:840px){ 
+
+    /*Header Responsive*/
+    .informacion_superior{
+        width: 100%;
+        height: 60px;
+    }
+    .img_jag{
+        display: none;
+    }
+    .jag p{
+        display: block;
+    }
+    .menu_principal ul{
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: calc(100vh - 60px);
+        left: -100%;
+        margin: 0;
+        text-align: center;
+        background-color:rgba(0, 30, 111);
+        transition: all .5s;
+        justify-content: space-evenly;
+    }
+    .menu_principal ul a{
+        color: white;
+    }
+    .menu_principal{
+        height: 0;
+    }
+
+    /*Documento Responsive*/
+    .informacion_superior h1{ 
+        font-size: 25px;
+    }
+    .informacion_superior > .usuarios > a{ 
+        padding: 10px;
+        margin: 5px;
+        font-size: 14px;
+    }
+    .menu_responsive ul a{
+        font-size: 30px;
+    }
+
+    /*buscar*/
+    .cuadro_buscar{ 
+        padding: 80px;
+    }
+    .div_buscar h2{ 
+        font-size: 40px;
+    }
+    .div_buscar form .cajabuscar{ 
+        width: 100%;
+        height: 40px;
+    }
+    .div_buscar form .botonbuscar{ 
+        padding: 12px 20px;
+        margin: 30px 10px;
+        font-size: 15px;
+    }
+
+
+    /*pie de pagina*/
+    footer{
+        font-size: 18px;
+    }
+    footer img{
+        width: 150px;
+    }
+    footer p{
+        margin: 15px;
+    }
+}
+
+/*
+Tablet
+*/
+@media (min-width:650px) and (max-width:840px){
+    /*buscar*/
+    .div_buscar form{
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+    }
+    .div_buscar p{
+        margin: 0;
+        font-size: 24px;
+    }
+    footer{
+        padding: 40px;
+    }
+} 
+
+/*
+celular
+*/
+@media (max-width:650px) {
+    /*infomracion principal*/
+    .usuarios{
+        margin: 5px;
+    }
+
+    /*buscar*/
+    .div_buscar{
+        width: 100%;
+    }
+    .div_buscar form{    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 15px 0px;
+    }
+    .div_buscar p{
+        margin: -15px 0px 0px;
+        font-size: 24px;
+    }
+
+    footer{
+        padding: 30px;
+    }
+}
+
+/*
+celular pequeño
+*/
+@media (max-width:600px) {
+    .informacion_superior h1{ 
+        font-size: 15px;
+    }
+    .informacion_superior > .usuarios > a{ 
+        padding: 8px;
+        margin: 2px;
+        font-size: 12px;
+    }
+    .menu_responsive ul a{
+        font-size: 25px;
+    }
+
+    /*buscar*/
+    .cuadro_buscar{
+        padding: 50px;
+    }
+    .div_buscar h2{
+        font-size: 30px;
+    }
+    .div_buscar p{
+        margin: -15px 0px 0px;
+        font-size: 22px;
+    }
+
+   
+    /*pie de pagina*/
+    footer{
+        font-size: 15px;
+        padding: 50px;
+    }
+    footer img{
+        width: 100px;
+    }
+}
+
+/*
+celular aun más pequeño
+*/
+
+@media (max-width:480px){
+    .informacion_superior h1{ 
+        font-size: 15px;
+    }
+    .informacion_superior > .usuarios > a{ 
+        padding: 5px;
+        margin: 2px;
+        font-size: 12px;
+        text-align: center;
+        line-height: 120%;
+    }
+    .menu_responsive ul a{
+        font-size: 22px;
+    }
+
+    /*buscar*/
+    .div_buscar form .cajabuscar{ 
+        width: 100%;
+        height: 30px;
+        font-size: 20px;
+    }
+    .div_buscar form .botonbuscar{ 
+        padding: 10px 20px;
+        margin: 20px 10px;
+        font-size: 15px;
+    }
+    .cuadro_buscar{
+        padding: 30px;
+    }
+    .div_buscar h2{
+        font-size: 25px;
+    }
+    .div_buscar p{
+        margin: -15px 0px 0px;
+        font-size: 18px;
+    }
+
+
+    /*pie de pagina*/
+    footer{
+        font-size: 12px;
+        padding: 20px;
+    }
+    footer img{
+        width: 80px;
+    }
+}
+
+/*
+Celular?
+*/
+
+@media (max-width:480px){
+    .informacion_superior h1{ 
+        font-size: 15px;
+    }
+    .informacion_superior > .usuarios > a{ 
+        padding: 5px 8px;
+        margin: 2px;
+        font-size: 12px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media (max-width:300px){
+    .informacion_superior h1{
+        display: none;
+    }
+    footer{
+        flex-direction: column;
+    }
+    .jag p{
+        font-size: 30px;
+        padding: 10px 10px;
+    }
+    .div_buscar form .cajabuscar{ 
+        font-size: 15px;
+    }
+    .cuadro_buscar{
+        padding: 20px;
+    }
+}
+
+
+/* 
+segunda parte 
+*/
+
+.p{
+    border-bottom: solid black 1px;
+    height: 10px;
+    overflow: hidden;
+}
+
+
+/* .ventana_aviso .ventana_opaca .popup header{ */
+    /* background-color:black;
+} */
+
+.ventana_aviso article{
+    display: flex;
+    flex-direction: column;
+    /* width: 300px; */
+    background-color: white;
+    z-index: 12;
+}
+.popup header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 20px 30px;
+    background-color: rgba(0, 30, 111);
+    font-family: sans-serif;
+    font-size: 20px;
+    
+}
+.popup header h1{
+    padding: 0px 50px 0px 0px;
+    color: white;
+}
+.popup header span{
+    width: 12px;
+    height: 12px;
+    padding: 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.popup header span:hover{
+    background-color: red;
+}
+.popup main{
+    padding: 20px 30px;
+    font-family: sans-serif;
+}
+.popup main div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding: 10px 20px; */
+}
+.popup main div a{
+    color: black;
+    margin: 2px;
+    text-align: center;
+    width: 180px;
+    border: solid 2px black;
+    padding: 5px;
+    transition: ease-in .12s all;
+}
+.popup main div a:hover{
+    background-color: rgb(0, 68, 255);
+}
+.popup main div p{
+    width: 400px;
+    padding: 30px;
+    font-size: 20px;
+}
+.ventana_aviso{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    transition: .2 linear all;
+    opacity: 1;
+    align-items: center;
+    justify-content: center;
+    visibility: visible;
+    z-index: 10;
+}
+.ventana_opaca{
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 11;
+}
+.ventana_aviso.unactive{
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+}
+.ventana_aviso.active{
+    opacity: 1;
+}
+.ventana_aviso > .popup{
+    margin-top: 0;
+}

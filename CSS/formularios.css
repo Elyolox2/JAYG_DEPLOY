@@ -1,0 +1,101 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+body{
+    background-color:rgb(202, 212, 255);
+}
+header{
+    display: flex;
+    background-color: black;
+    color: white;
+    align-items: center;
+}
+header img{
+    width: 60px;
+    margin: 15px;
+}
+header h1{
+    font-size: 30px;
+    color: white;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+main div{
+    margin: 100px;
+    background-color: black;
+    color: white;
+    padding: 60px 100px;
+    border-radius: 10px;
+}
+main div h1{
+    margin: 20px;
+}
+main div p{
+    margin: 20px;
+    width: 300px;
+}
+main div form{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+main div form input{
+    margin: 4px;
+    color: black;
+    font-size: 15px;
+    height: 40px;
+}
+main div a{
+    text-decoration: none;
+    color:white;
+}
+main div > a:hover{
+    color:rgb(0, 50, 255);
+}
+main div p > a:hover{
+    color:rgb(0, 50, 255);
+}
+main div span{
+    background-color: rgb(0, 50, 255);
+    margin: 4px;
+    font-size: 15px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main div span:hover{
+    background-color: rgba(0, 30, 111);
+}
+main div form .boton{
+    background-color: rgba(0, 30, 111);
+    color: white;
+    cursor: pointer;
+}
+
+
+
+footer{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    height: 200px;
+}
+footer img{
+    width: 150px;
+}
+footer p{
+    margin: 20px;
+    line-height: 30px;
+}
